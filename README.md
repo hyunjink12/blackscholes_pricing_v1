@@ -26,4 +26,4 @@ Backed by full faith and credit of the U.S. government, there is virtually zero 
 
 So why not T-Bonds?
 
-The Black-Scholes discounts future payoff back to PV using e^(-rT). The rate NEEDS to reflect what you could theoretically earn risk-free over the same period as your contract expiration (i.e., a 30-day call should use a 30-day rate, not a 30 year rate).
+The Black-Scholes discounts future cash flows back to PV using e^(-rT). The rate NEEDS to reflect what you could theoretically earn risk-free over the same period as your contract expiration (i.e., a 30-day call should use a 30-day rate, not a 30 year rate).
