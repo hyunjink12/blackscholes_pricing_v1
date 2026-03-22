@@ -11,7 +11,8 @@ Used [Barchart](https://www.barchart.com/) for "S, K, T, sigma".
 Used [treasury.gov](https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_bill_rates&field_tdr_date_value=2026) for "r".
 
 # Parameters
-EXPIRATION            MATURITY TRANCHE
+
+# EXPIRATION            MATURITY TRANCHE
 0-4 weeks             4 week T-Bill
 1-3 months            3-month T-Bill
 3-6 months            6-month T-Bill
