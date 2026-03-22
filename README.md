@@ -16,7 +16,7 @@ The Coupon Equivalent Yield (CEY), also known as the Bond Equivalent Yield (BEY)
 
 The difference between a 4-week and 6-month rate is usually small enough that it barely moves output. You can instead opt to use the 3-month T-Bill rate found here: https://fred.stlouisfed.org/series/DGS3MO.
 
-Much of the options flow is composed of short-dated (30-90 days) contracts. Liquidity matters, and so in practice, most people use the 3-Month T-Bill.
+Much of the options flow is comprised of short-dated (30-90 days) contracts. Liquidity matters, and so in practice, most people use the 3-Month T-Bill.
 
 If you are pricing LEAPS, swap the 3-month for the apporpriate maturity.
 
