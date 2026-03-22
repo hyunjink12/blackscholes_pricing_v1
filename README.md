@@ -11,7 +11,7 @@ Used [Barchart](https://www.barchart.com/) for "S", "K", "T", "sigma", [treasury
 
 The Coupon Equivalent Yield (CEY), also known as the Bond Equivalent Yield (BEY), is the annualized return for discount or short-term, non-interest-bearing bonds. This is your "r".
 
-For this model, I used the closest strike relative to SPY's price as of 3/20/26. Going forward for future projects, I would use a delta 0.50 strike to find and use "true" ATM.
+For this model, I used the closest strike relative to SPY's price as of 3/20/26. Going forward for future projects, I would find a delta 0.50 strike to use "true" ATM.
 
 ### Parameters
 <img width="388" height="156" alt="Screenshot 2026-03-21 at 10 04 31 PM" src="https://github.com/user-attachments/assets/fedde0dc-e1f5-4f1e-8efd-09e1b43005b5" />
