@@ -31,4 +31,4 @@ So why not T-Bonds?
 The Black-Scholes discounts future cash flows back to PV using e^(-rT). The rate NEEDS to reflect what you could theoretically earn risk-free over the same period as your contract expiration (i.e., a 30-day call should use a 30-day rate, not a 30 year rate).
 
 ### The Math
-BS uses continuous compounding. When taken to the limit, as n → ∞, it converges to e^r.
+BS uses continuous compounding. n = the number of compounding periods.  When taken to the limit, (1+r/n)^n as n → ∞, it converges to e^r.
