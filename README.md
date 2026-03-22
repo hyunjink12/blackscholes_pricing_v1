@@ -12,8 +12,8 @@ Used [treasury.gov](https://home.treasury.gov/resource-center/data-chart-center/
 
 # Parameters
 
-### EXPIRATION            MATURITY TRANCHE
-0-4 weeks             4 week T-Bill
+### EXPIRATION----------MATURITY TRANCHE
+#0-4 weeks---------------4 week T-Bill
 1-3 months            3-month T-Bill
 3-6 months            6-month T-Bill
 6-12 months           1-year T-Bill
