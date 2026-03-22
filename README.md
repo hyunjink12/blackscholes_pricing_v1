@@ -20,7 +20,7 @@ Much of the options flow is comprised of short-dated (30-90 days) contracts. Liq
 
 If you are pricing LEAPS, swap the 3-month for the apporpriate maturity.
 
-#### Why use T-Bills/Notes as "r"?
+### Why use T-Bills/Notes as "r"?
 
 Backed by full faith and credit of the U.S. government, there is virtually zero default or credit risk.
 
