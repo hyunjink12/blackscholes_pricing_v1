@@ -7,7 +7,7 @@ Finds theoretical put-call pricing based on 5 assumptions for a stock:
 - r: risk-free rate
 - sigma: expected volatility
 
-Used [Barchart](https://www.barchart.com/) for "S", "K", "T", "sigma", [treasury.gov](https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_bill_rates&field_tdr_date_value=2026) for "r".
+Used [Barchart](https://www.barchart.com/) for "S", "K", "T", "Σ", [treasury.gov](https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_bill_rates&field_tdr_date_value=2026) for "r".
 
 The Coupon Equivalent Yield (CEY), also known as the Bond Equivalent Yield (BEY), is the annualized return for discount or short-term, non-interest-bearing bonds. This is your "r".
 
