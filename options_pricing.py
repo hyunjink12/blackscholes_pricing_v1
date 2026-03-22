@@ -2,7 +2,7 @@ import math
 
 def black_scholes(S, K, T, r, sigma, option_type='call'):
     # S = stock price, K = strike price, T = time to expiry (in years)
-    # r = risk-free rate (T-bill CEY, decimal)
+    # r = risk-free rate (Treasurey CEY, decimal)
     # sigma = volatility (annualized standard deviation of returns, decimal)
 
     d1 = (math.log(S / K) + (r + 0.5 * sigma**2) * T) / (sigma * math.sqrt(T))
@@ -22,7 +22,7 @@ def black_scholes(S, K, T, r, sigma, option_type='call'):
 S = 648.57          # Current price (e.g., SPY closing price)
 K = 648             # At or near-the-money strike
 T = 4 / 365         # (DTE / 365) to convert to years
-r = 0.0368          # Use T-Bill rate according to DTE (e.g. 4 DTE = 4 week tranche, CEY @ 3.68%)
+r = 0.0368          # Use treasury rate according to DTE (e.g. 4 DTE = 4 week tranche, CEY @ 3.68%)
 sigma = 0.2827      # IV for contract
 
 call = black_scholes(S, K, T, r, sigma, 'call')
