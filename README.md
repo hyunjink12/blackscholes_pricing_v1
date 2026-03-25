@@ -1,6 +1,6 @@
 ### Limitations/Assumptions
 
-This implementation of Black-Schoels assumes: European-style exercise, constant volatility, and no dividends (unless explicitly adjusted). 
+This implementation of Black-Schoels assumes: European-style exercise, constant volatility, and no dividends (unless explicitly adjusted). For simplicity, we will be using the quoted annualized Treasury yield directly as an approximation (explained below).
 
 This model is not intended to perfectly replicate market prices, and can misprice short-dated options where event risk is significant. 
 
@@ -21,7 +21,15 @@ Finds theoretical put-call pricing based on 5 assumptions for a stock:
 
 Used [Barchart](https://www.barchart.com/) for "S", "K", "T", "sigma", [treasury.gov](https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_bill_rates&field_tdr_date_value=2026) for "r".
 
-The Coupon Equivalent Yield (CEY), also known as the Bond Equivalent Yield (BEY), is the annualized return for discount or short-term, non-interest-bearing bonds. This is your "r".
+The risk-free rate used in this model is sourced from the U.S. Treasury yields (CEY/BEY). The Coupon Equivalent Yield, also known as the Bond Equivalent Yield, is the annualized return for discount or short-term, non-interest-bearing bonds. This is your "r".
+
+### Oversight to Keep in Mind
+
+A more precise approach would convert the quoted yield into a continuously compounded rate:
+
+####r = math.log(1 + r_annual)
+
+Why? Treasury yields are *discretely* compounded yield approximations. By using the CEY, we are implicitly assuming that "r" in this case is already a continuously compunded rate. It is not. *However*, in the case of short-dated options (like the 4 DTE used as the default value), the difference between discrete and continuous compounding is negligible. The pricing for the contracts will barely change.
 
 For this model (version 1), I used the closest strike relative to SPY's price as of 3/20/26 as an example. Going forward for future projects, I would find a delta 0.50 strike to use "true" ATM.
 
