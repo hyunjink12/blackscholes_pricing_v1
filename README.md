@@ -31,7 +31,9 @@ A more precise approach would convert the quoted yield into a continuously compo
 
 Why? 
 
-Treasury yields are *discretely* compounded yield approximations. By using the CEY, we are implicitly assuming that "r" in this case is already a continuously compunded rate. It is not. *However*, in the case of short-dated options (like the 4 DTE used as the default value), the difference between discrete and continuous compounding is negligible. The pricing for the contracts will barely change.
+Treasury yields are *discretely* compounded yield approximations. By using the CEY, we are implicitly assuming that "r" in this case is already a continuously compunded rate. It is not. 
+
+*However*, in the case of short-dated options (like the 4 DTE used as the default value), the difference between discrete and continuous compounding is negligible. The pricing for the contracts will barely change.
 
 For this model (version 1), I used the closest strike relative to SPY's price as of 3/20/26 as an example. Going forward for future projects, I would find a delta 0.50 strike to use "true" ATM.
 
