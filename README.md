@@ -40,7 +40,7 @@ Backed by full faith and credit of the U.S. government, there is virtually zero 
 
 So why didn't I use T-Bonds?
 
-The Black-Scholes discounts future cash flows back to PV using e^(-rT). The rate NEEDS to reflect what you could theoretically earn risk-free over the same period as your contract expiration (i.e., a 30-day contract should use a 30-day rate, not a 30 year rate).
+The Black-Scholes discounts future cash flows back to PV using e^(-rT). The rate *needs* to reflect what you could theoretically earn risk-free over the same period as your contract expiration (i.e., a 30-day contract should use a 30-day rate, not a 30 year rate).
 
 ### The Math
 ![ezgif-89ccf0feb6f98d9d](https://github.com/user-attachments/assets/187b24bc-271b-4d3a-884d-607ad83dfecb)
