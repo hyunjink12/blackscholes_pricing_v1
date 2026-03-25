@@ -1,3 +1,14 @@
+# About
+
+Finds theoretical put-call pricing based on 5 assumptions for a stock:
+- S: spot price
+- K: strike price
+- T: time to expiry (in years)
+- r: risk-free rate
+- sigma: expected volatility
+
+Used [Barchart](https://www.barchart.com/) for "S", "K", "T", "sigma", [treasury.gov](https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_bill_rates&field_tdr_date_value=2026) for "r".
+
 # Limitations/Assumptions
 
 This implementation of Black-Scholes assumes: European-style exercise, constant volatility, and no dividends (unless explicitly adjusted). For simplicity, we will be using the quoted annualized Treasury yield directly as an approximation (explained below).
@@ -9,17 +20,6 @@ Observed option prices reflect several factors not caputred by Black-Scholes:
 - Volatility skew (strike-dependent IV)
 - Term structure of volatility across maturities
 - Liquidity conditions in the options market
-
-# About
-
-Finds theoretical put-call pricing based on 5 assumptions for a stock:
-- S: spot price
-- K: strike price
-- T: time to expiry (in years)
-- r: risk-free rate
-- sigma: expected volatility
-
-Used [Barchart](https://www.barchart.com/) for "S", "K", "T", "sigma", [treasury.gov](https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_bill_rates&field_tdr_date_value=2026) for "r".
 
 The risk-free rate used in this model is sourced from the U.S. Treasury yields (CEY/BEY). The Coupon Equivalent Yield, also known as the Bond Equivalent Yield, is the annualized return for discount or short-term, non-interest-bearing bonds. This is your "r".
 
