@@ -15,7 +15,7 @@ This implementation of Black-Scholes assumes: European-style exercise, constant 
 
 This model is not intended to perfectly replicate market prices, and can misprice short-dated options where event risk is significant. 
 
-Observed option prices reflect several factors not caputred by Black-Scholes:
+Observed option prices reflect several factors not captured by Black-Scholes:
 - Supply/demand dynamics
 - Volatility skew (strike-dependent IV)
 - Term structure of volatility across maturities
