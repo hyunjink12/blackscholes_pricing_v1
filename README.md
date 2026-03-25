@@ -1,4 +1,4 @@
-### Limitations/Assumptions
+# Limitations/Assumptions
 
 This implementation of Black-Scholes assumes: European-style exercise, constant volatility, and no dividends (unless explicitly adjusted). For simplicity, we will be using the quoted annualized Treasury yield directly as an approximation (explained below).
 
