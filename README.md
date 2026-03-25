@@ -37,7 +37,7 @@ Treasury yields are *discretely* compounded yield approximations. By using the C
 
 For this model (version 1), I used the closest strike relative to SPY's price as of 3/20/26 as an example. Going forward for future projects, I would find a delta 0.50 strike to use "true" ATM.
 
-### Parameters
+# Parameters
 <img width="416" height="184" alt="Screenshot 2026-03-25 at 4 13 30 AM" src="https://github.com/user-attachments/assets/b28d1a54-6414-47e6-a501-7fc7d9e86cd3" />
 
 The difference between a 4-week and 6-month rate is usually small enough that it barely moves output. You can instead opt to use the 3-month T-Bill rate found here: https://fred.stlouisfed.org/series/DGS3MO.
