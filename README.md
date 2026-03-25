@@ -11,16 +11,16 @@ Used [Barchart](https://www.barchart.com/) for "S", "K", "T", "sigma", [treasury
 
 The Coupon Equivalent Yield (CEY), also known as the Bond Equivalent Yield (BEY), is the annualized return for discount or short-term, non-interest-bearing bonds. This is your "r".
 
-For this model, I used the closest strike relative to SPY's price as of 3/20/26. Going forward for future projects, I would find a delta 0.50 strike to use "true" ATM.
+For this model (version 1), I used the closest strike relative to SPY's price as of 3/20/26. Going forward for future projects, I would find a delta 0.50 strike to use "true" ATM.
 
 ### Parameters
-<img width="388" height="156" alt="Screenshot 2026-03-21 at 10 04 31 PM" src="https://github.com/user-attachments/assets/fedde0dc-e1f5-4f1e-8efd-09e1b43005b5" />
+<img width="416" height="184" alt="Screenshot 2026-03-25 at 4 13 30 AM" src="https://github.com/user-attachments/assets/b28d1a54-6414-47e6-a501-7fc7d9e86cd3" />
 
 The difference between a 4-week and 6-month rate is usually small enough that it barely moves output. You can instead opt to use the 3-month T-Bill rate found here: https://fred.stlouisfed.org/series/DGS3MO.
 
 Much of the options flow is comprised of short-dated (30-90 days) contracts. Liquidity matters, and so in practice, most people use the 3-Month T-Bill.
 
-If you are pricing LEAPS, swap the 3-month for the apporpriate maturity.
+If you are pricing LEAPS, swap the 3-month for the appropriate maturity.
 
 ### Why Use T-Bills/Notes as "r"?
 
