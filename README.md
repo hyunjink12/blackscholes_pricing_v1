@@ -44,5 +44,6 @@ The Black-Scholes discounts future cash flows back to PV using e^(-rT). The rate
 
 ### The Math
 ![ezgif-89ccf0feb6f98d9d](https://github.com/user-attachments/assets/187b24bc-271b-4d3a-884d-607ad83dfecb)
+
 BS uses continuous compounding. n = the number of compounding periods.  When taken to the limit, (1+r/n)^n as n → ∞, it converges to e^r.
 
