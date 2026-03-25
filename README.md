@@ -46,7 +46,7 @@ Much of the options flow is comprised of short-dated (30-90 days) contracts. Liq
 
 If you are pricing LEAPS, swap the 3-month for the appropriate maturity.
 
-### Why Use T-Bills/Notes as "r"?
+# Why Use T-Bills/Notes as "r"?
 
 Backed by full faith and credit of the U.S. government, there is virtually zero default or credit risk.
 
@@ -54,7 +54,7 @@ So why didn't I use T-Bonds?
 
 The Black-Scholes discounts future cash flows back to PV using e^(-rT). The rate *needs to reflect* what you could theoretically earn risk-free over the same period as your contract expiration (i.e., a 30-day contract should use a 30-day rate, not a 30 year rate).
 
-### The Math
+# The Math
 ![ezgif-89ccf0feb6f98d9d](https://github.com/user-attachments/assets/187b24bc-271b-4d3a-884d-607ad83dfecb)
 
 BS uses continuous compounding. n = the number of compounding periods.  When taken to the limit, (1+r/n)^n as n → ∞, it converges to e^r.
