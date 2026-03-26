@@ -15,11 +15,11 @@ This implementation of Black-Scholes assumes: European-style exercise, constant 
 
 This model is not intended to perfectly replicate market prices, and can misprice short-dated options where event risk is significant. 
 
-Observed option prices reflect several factors not captured by Black-Scholes:
-- Supply/demand dynamics
+Several factors not captured:
+- Supply/demand
 - Volatility skew (strike-dependent IV)
 - Term structure of volatility across maturities
-- Liquidity conditions in the options market
+- Liquidity conditions
 
 The risk-free rate used in this model is sourced from the U.S. Treasury yields (CEY/BEY). The Coupon Equivalent Yield, also known as the Bond Equivalent Yield, is the annualized return for discount or short-term, non-interest-bearing bonds. This is your "r".
 
