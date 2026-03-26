@@ -11,7 +11,7 @@ Used [Barchart](https://www.barchart.com/) for "S", "K", "T", "sigma", [treasury
 
 ### Limitation to keep in mind
 
-This implementation of Black-Scholes assumes: European-style exercise, constant volatility, and no dividends (unless explicitly adjusted). For simplicity, we will be using the quoted annualized Treasury yield directly as an approximation (explained below).
+This implementation of Black-Scholes assumes European-style exercise, constant volatility, and no dividends (unless explicitly adjusted). For simplicity, I used the quoted annualized Treasury yield directly as an approximation (explained below).
 
 This model is not intended to perfectly replicate market prices, and can misprice short-dated options where event risk is significant. 
 
