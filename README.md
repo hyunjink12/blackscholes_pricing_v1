@@ -27,8 +27,6 @@ A more precise approach would convert the quoted yield into a continuously compo
 
 **r = math.log(1 + r_annual)**
 
-Why? 
-
 By using the CEY, we are implicitly assuming that "r" in this case is already a continuously compunded rate. It is not. Treasury yields are *discretely* compounded yield approximations.
 
 *However*, in the case of short-dated options (like the 4 DTE used as the default value), the difference between discrete and continuous compounding is negligible. The pricing for the contracts will barely change.
