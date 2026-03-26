@@ -53,4 +53,4 @@ The Black-Scholes discounts future cash flows back to PV using e^(-rT). The rate
 
 BS uses continuous compounding. n = the number of compounding periods.  When taken to the limit, (1+r/n)^n as n → ∞, it converges to e^r.
 
-It's important to note that we are discounting the strike (K), since "K" is a future cash flow at time "T". This is applicable for both calls and puts.
+It's important to note that we're discounting the strike (K), since "K" is a future cash flow at time "T". This is applicable for both calls and puts.
