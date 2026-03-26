@@ -15,11 +15,11 @@ Used [Barchart](https://www.barchart.com/) for "S", "K", "T", "sigma", [treasury
 
 This implementation of Black-Scholes assumes European-style exercise, constant volatility, and no dividends (unless explicitly adjusted). For simplicity, I used the quoted annualized Treasury yield directly as an approximation (explained below).
 
-Several factors not captured:
+Factors not represented by the model:
 - Supply/demand
 - Volatility skew (strike-dependent IV)
 - Term structure of volatility across maturities
-- Liquidity conditions
+- Market liquidity
 
 The risk-free rate used in this model is sourced from the U.S. Treasury yields (CEY/BEY). The Coupon Equivalent Yield (Bond Equivalent Yield) is the annualized return for discount or short-term, non-interest-bearing bonds. This is your "r".
 
@@ -27,11 +27,11 @@ A more precise approach would convert the quoted yield into a continuously compo
 
 **r = math.log(1 + r_annual)**
 
-By using the CEY, we are implicitly assuming that "r" in this case is already a continuously compunded rate. It is not. Treasury yields are *discretely* compounded yield approximations.
+By using the CEY, we are implicitly assuming that "r" in this case is already a continuously compunded rate. It is not. Treasury yields are discretely compounded yield approximations.
 
 In the case of short-dated options (like the 4 DTE used as the default value), the difference between discrete and continuous compounding is negligible. The pricing for the contracts will barely change.
 
-For this version 1, I used the closest strike relative to SPY's price as of 3/20/26 as an example. Going forward for future projects, I would find a delta 0.50 strike to use "true" ATM.
+For version 1, I used the closest strike relative to SPY's price as of 3/20/26 as an example. Going forward for future projects, I would find a delta 0.50 strike to use "true" ATM.
 
 ### Parameters
 <img width="416" height="184" alt="Screenshot 2026-03-25 at 4 13 30 AM" src="https://github.com/user-attachments/assets/b28d1a54-6414-47e6-a501-7fc7d9e86cd3" />
