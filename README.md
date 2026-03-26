@@ -21,7 +21,7 @@ Several factors not captured:
 - Term structure of volatility across maturities
 - Liquidity conditions
 
-The risk-free rate used in this model is sourced from the U.S. Treasury yields (CEY/BEY). The Coupon Equivalent Yield, also known as the Bond Equivalent Yield, is the annualized return for discount or short-term, non-interest-bearing bonds. This is your "r".
+The risk-free rate used in this model is sourced from the U.S. Treasury yields (CEY/BEY). The Coupon Equivalent Yield (Bond Equivalent Yield) is the annualized return for discount or short-term, non-interest-bearing bonds. This is your "r".
 
 A more precise approach would convert the quoted yield into a continuously compounded rate:
 
