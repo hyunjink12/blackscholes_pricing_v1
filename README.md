@@ -11,7 +11,7 @@ Finds theoretical put-call pricing based on 5 assumptions for a stock:
 
 Used [Barchart](https://www.barchart.com/) for "S", "K", "T", "sigma", [treasury.gov](https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_bill_rates&field_tdr_date_value=2026) for "r".
 
-### Limitation to keep in mind
+### Limitation
 
 This implementation of Black-Scholes assumes European-style exercise, constant volatility, and no dividends (unless explicitly adjusted). For simplicity, I used the quoted annualized Treasury yield directly as an approximation (explained below).
 
