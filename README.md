@@ -44,7 +44,7 @@ If you are pricing LEAPS, swap the 3-month for the appropriate maturity.
 
 ### T-Bills/Notes as "r"
 
-There is virtually zero default or credit risk since it is backed by the U.S. government. So why didn't I use T-Bonds?
+There is virtually zero default or credit risk since it's backed by the U.S. government. So why didn't I use T-Bonds?
 
 The Black-Scholes discounts future cash flows back to PV using e^(-rT). The rate *needs to reflect* what you could theoretically earn risk-free over the same period as your contract expiration (i.e., a 30-day contract should use a 30-day rate, not a 30 year rate).
 
