@@ -23,11 +23,11 @@ Factors not represented by the model:
 
 The risk-free rate used in this model is sourced from the U.S. Treasury yields (CEY/BEY). The Coupon Equivalent Yield (Bond Equivalent Yield) is the annualized return for discount or short-term, non-interest-bearing bonds. This is your "r".
 
+By using the CEY, we are implicitly assuming that "r" in this case is already a continuously compunded rate. It is not.
+
 A more precise approach would convert the quoted yield into a continuously compounded rate:
 
 **r = math.log(1 + r_annual)**
-
-By using the CEY, we are implicitly assuming that "r" in this case is already a continuously compunded rate. It is not.
 
 In the case of short-dated options (such as the 4 DTE I used as the default value), the difference between discrete and continuous compounding is negligible. The pricing for the contracts will barely change.
 
