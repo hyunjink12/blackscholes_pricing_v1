@@ -1,4 +1,4 @@
-This model is not intended to perfectly replicate market prices and can misprice short-dated options where event risk is significant.
+Disclaimer: This model is not intended to perfectly replicate market prices and can misprice short-dated options where event risk is significant.
 
 # About
 
